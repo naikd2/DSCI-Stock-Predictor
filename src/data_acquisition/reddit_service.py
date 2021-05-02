@@ -29,8 +29,16 @@ class RedditService:
         links = []
         for s in posts['data']:
             links.append(s['permalink'].split('/')[4])
+        if not links:
+            return {}
         query = {'link_id': ",".join(links),
                  'sort_type': 'score', 'sort': 'asc',
                  'metadata': 'true', 'limit': 500}
         r = requests.get(f"{self.COMMENTS_URL}", params=query)
         return r.json()
+
+    def merge_data(self, posts, comments):
+        return {
+            'posts': posts.get('data', []),
+            'comments': comments.get('data', [])
+        }
