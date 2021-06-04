@@ -15,18 +15,25 @@ def get_dates(year:int, month:int):
     return m
 
 
-ticker = 'GE'
+ticker = 'NVDA'
 subreddit = 'wallstreetbets'
-file_path = f"data/{ticker}/{subreddit}"
+file_path = f"{subreddit}"
+dates = []
+dates.extend(get_dates(2021, 1))
+dates.extend(get_dates(2021, 2))
+dates.extend(get_dates(2021, 3))
+dates.extend(get_dates(2021, 4))
 
 reddit = RedditService(ticker, subreddit)
 fs = FileService()
 
-dates = get_dates(2021, 1)
-
 for r in range(len(dates)-1):
     start = dates[r]
     end = dates[r + 1]
+
+    if fs.file_exists(f"{file_path}/{start}.json"):
+        print(f"Skipping Posts: {start}-{end}")
+        continue
 
     print(f"Acquiring Posts: {start}-{end}")
     posts = reddit.get_posts(start, end)
@@ -34,4 +41,4 @@ for r in range(len(dates)-1):
     data = reddit.merge_data(posts, comments)
 
     fs.save_file(data, f"{file_path}/{start}.json")
-    time.sleep(1) # API has rate limit
+    time.sleep(1.25) # API has rate limit

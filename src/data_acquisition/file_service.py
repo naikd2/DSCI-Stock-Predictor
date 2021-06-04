@@ -13,6 +13,13 @@ class FileService:
             json.dump(data, f)
         return
 
+    def file_exists(self, filename:str):
+        f = Path(filename)
+        if f.exists():
+            return True
+        else:
+            return False
+
     def __create_directories(self, filename:str):
         paths = filename.split("/")
         Path("/".join(paths[:-1])).mkdir(parents=True, exist_ok=True)
