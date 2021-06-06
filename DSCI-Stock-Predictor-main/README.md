@@ -5,7 +5,7 @@ Capstone 1 includes the Data Acquistion, Pre-Processing, and EDA of our project.
 
 Code Folder:
 
-	-   Additional Code = These are pieces of code that were used for eventually compiled into the Project Code.
+	-   Additional Code = This folder includes pieces of code that were eventually compiled into the Project Code.
 
 	-   4 Months Reddit Posts_Comments Combined = The first analysis included Reddit Posts and Stock data from 
 	    January-April of 2020.  This code includes and Stock data from January-April of 2020.  This code includes 
@@ -17,8 +17,8 @@ Code Folder:
 
 Data Folder:
 
-	-   Yahoo Finance = This folder the Finance Data from our 4 companies we did analysis on over the 8 month 
-	    time span
+	-   Yahoo Finance = This folder has the Finance Data from our 4 companies we did analysis on over the 8 month 
+	    time span.
 	
 	-   8_mos_DataFrame.csv = This file is our Compiled Data Frame with all of our features over 8 months, with
 	    Posts and Comments Separated.  ***It is important to note, I think in Capstone 2, we should consider 
@@ -26,6 +26,6 @@ Data Folder:
 	    posts and comments if we want more.
 	    
 	-   Posts and Comments = This folder contains Data Objects that were written to Json Objects for easy 
-	    retrieval, they include the Posts, Comments, the Word Count Structures.  These objects are separated
-	    into sub-folders, based on weather they were an analysis done when the Posts and Comments were all 
-	    combined together, or weather it was an analysis done just on the posts or the comments.
+	    retrieval, they include the Posts, Comments, and the Word Count Structures.  These objects are separated
+	    into sub-folders, based on whether they were an analysis done when the Posts and Comments were all 
+	    combined together, or whether it was an analysis done just on the posts or the comments.
