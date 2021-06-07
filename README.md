@@ -6,6 +6,7 @@ Capstone 1 includes the Data Acquistion, Pre-Processing, and EDA of our project.
 Code Folder:
 
 	-   Additional Code = This folder includes pieces of code that were eventually compiled into the Project Code.
+        - Twitter = Code enclosed has pipeline to gather twitter data using the cashtag ($GE). To use, add token to yaml file.
 
 	-   4 Months Reddit Posts_Comments Combined = The first analysis included Reddit Posts and Stock data from 
 	    January-April of 2020.  This code includes and Stock data from January-April of 2020.  This code includes 
@@ -29,3 +30,5 @@ Data Folder:
 	    retrieval, they include the Posts, Comments, and the Word Count Structures.  These objects are separated
 	    into sub-folders, based on whether they were an analysis done when the Posts and Comments were all 
 	    combined together, or whether it was an analysis done just on the posts or the comments.
+
+    - Twitter = Tweets using API for the four tickers (TSLA, GE, AMD, NVDA) between 01/2021 - 04/2021. Ranging between 200-2000 tweets a day
