@@ -31,4 +31,4 @@ Data Folder:
 	    into sub-folders, based on whether they were an analysis done when the Posts and Comments were all 
 	    combined together, or whether it was an analysis done just on the posts or the comments.
 
-    - Twitter = Tweets using API for the four tickers (TSLA, GE, AMD, NVDA) between 01/2021 - 04/2021. Ranging between 200-2000 tweets a day
+    -   Twitter = Tweets using API for the four tickers (TSLA, GE, AMD, NVDA) between 01/2021 - 04/2021. Ranging between 200-2000 tweets a day
