@@ -45,7 +45,7 @@ def load_ticker(ticker):
         dataset.append({
             'ticker': ticker,
             'date': date,
-            'tweets': tweets,
+            'tweets': json.dumps(tweets),
             'tweet_count': len(tweets),
             'likes': sum([t['public_metrics']['like_count'] for t in tweets]),
             'retweets': sum([t['public_metrics']['retweet_count'] for t in tweets]),
@@ -65,4 +65,6 @@ if __name__ == '__main__':
     df.to_csv("all_tweets.csv")
 
     df = df[['ticker', 'date', 'tweet_count', 'likes', 'retweets', 'direction']]
+
     df.to_csv("sample_tweets.csv", index=False)
+
