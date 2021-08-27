@@ -15,6 +15,11 @@ Code Folder:
 	-   8 Mos and Post and Comments Separated = This folder includes analysis from October 2020-May 2021.  
 	    In addition, the Posts and Comments in this analysis have been separated into their own objects 
 	    in all Preprocessing and EDA.
+	
+	-   Machine Learning techniques performed on our data included a Random Forest Time Series approach, 
+	    Support Vector Machines combined with the creation of a TF_IDF to be added as a feature.
+	    
+	 
 
 Data Folder:
 
