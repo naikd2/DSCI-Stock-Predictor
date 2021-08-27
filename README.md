@@ -1,7 +1,7 @@
 # DSCI-Stock-Predictor
 
 
-Capstone 1 includes the Data Acquistion, Pre-Processing, and EDA of our project.  The project is in regards to predicting the movement in stock price based on the language of social media posts.  As seen we break down our folders into Code, Data, Reports, and the Presentation.  With the Reports and Presentation being self explanatory, we will explain what is in the Code and Data Folders.
+Capstone 1 includes the Data Acquistion, Pre-Processing, and EDA of our project.  The project is in regards to predicting the movement in stock price based on the language of social media posts.  As seen we break down our folders into Code, Data, Reports, and the Presentation.  In Capstone 2, we continue our analysis and begin to apply different Machine Learning techniques and continue to finalize our dataset with new features.  With the Reports and Presentation being self explanatory, we will explain what is in the Code and Data Folders.
 
 Code Folder:
 
