@@ -37,3 +37,9 @@ Data Folder:
 	    combined together, or whether it was an analysis done just on the posts or the comments.
 
     -   Twitter = Tweets using API for the four tickers (TSLA, GE, AMD, NVDA) between 01/2021 - 04/2021. Ranging between 200-2000 tweets a day
+    
+    - tweet_dataframe.py -> generates a combined dataframe of Yahoo and Twitter data. Calculates Rolling window for Closed-Open price
+    
+    - nlp_transform_tfidf.py -> generates NLP dataframe for TF-IDF for twitter data
+    - nlp_transformation.py -> generates NLP dataframe for sentiment analysis using standford NLP
+    - classifications.py -> runs through permutations of TF-IDF/Sentiment datasets using K-fold for two models using a range of time windows for decision varable
